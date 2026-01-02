@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Trust Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+  crossorigin="anonymous"
+/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+      <script src="https://kit.fontawesome.com/abc1234567.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="boost">
+ <header class="relative inset-x-0 top-0 z-50">
+  <!-- NAVBAR -->
+  <nav
+    class="fixed top-0 left-0 right-0 z-50 bg-white flex items-center justify-between p-6 lg:px-8 border-b border-gray-200">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3 lg:flex-1">
+      <a href="#" class="flex items-center gap-3 -m-1.5 p-1.5">
+        <span class="sr-only">Unity Trust Bank</span>
+
+        <img src="./logoo.jpeg" alt="Unity Trust Bank" class="h-8 w-auto" />
+
+        <div class="flex flex-col leading-tight">
+          <span class="text-lg font-semibold text-gray-900">Unity</span>
+          <span class="text-sm text-gray-500">Trust Bank</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- MOBILE ICONS -->
+    <div class="flex items-center gap-3 lg:hidden">
+      <!-- SVG icon -->
+      <a href="./" class="text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
+        </svg>
+      </a>
+
+      <!-- Menu Button -->
+      <button id="menu-btn"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900 focus:outline-none">
+        <span class="sr-only">Open menu</span>
+        <svg id="menu-icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.5"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- DESKTOP MENU -->
+    <div class="hidden lg:flex lg:gap-x-10">
+      <a href="#" class="text-sm font-semibold text-gray-900">Home</a>
+      <a href="#" class="text-sm font-semibold text-gray-900">About Us</a>
+      <a href="./contact.html" class="text-sm font-semibold text-gray-900">Contact Us</a>
+      <a href="./service.html" class="text-sm font-semibold text-gray-900">FAQ's</a>
+      <a href="#" class="text-sm font-semibold text-gray-900">Terms</a>
+      <a href="#" class="text-sm font-semibold text-gray-900">Privacy</a>
+    </div>
+
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <a href="">
+
+    <button class="mx-auto  rounded-lg bg-gradient-to-r from-red-500 to-orange-500 px-8 py-4 text-white font-medium flex items-center gap-2">
+     <svg xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="w-5 h-5"
+  >
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+    />
+  </svg>
+      Login here
+    </button>
+    </a>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu"
+    class="fixed top-[72px] left-0 w-full bg-white border-t border-gray-200
+           transform -translate-y-full opacity-0
+           transition-all duration-300 ease-in-out
+           lg:hidden z-40">
+
+    <div class="flex flex-col space-y-6 p-6">
+      <a href="#" class="text-lg text-gray-900">Home</a>
+      <a href="#" class="text-lg text-gray-900">About Us</a>
+      <a href="./contact.html" class="text-lg text-gray-900">Contact Us</a>
+      <a href="./service.html" class="text-lg text-gray-900">FAQ's</a>
+      <a href="#" class="text-lg font-semibold text-gray-900">Terms & Conditions</a>
+      <a href="#" class="text-lg font-semibold text-gray-900">Privacy Policy</a>
+      <a href="#" class="text-lg font-semibold text-gray-900">Login</a>
+      <a href="#" class="text-lg font-semibold text-gray-900">Sign Up</a>
+    </div>
+  </div>
+</header>
+    <el-dialog>
+      <dialog id="mobile-menu" class="m-0 p-0 backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline focus:outline-0">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Product</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Features</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Marketplace</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Company</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log in</a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+      <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+    </div>
+   <div class="mx-auto max-w-2xl py-20 sm:py-32 lg:py-48">
+
+      
+     <section class="bg-transparent min-h-screen flex flex-col items-center justify-center text-center px-6 md:px-12">
+  <h1 class="text-4xl sm:text-6xl font-medium text-[#0F172A] font-montserrat tracking-tight text-balance">
+  <span class="font text-white ">Stay In Control Of </span> <span class="font-bold text-[#1D4ED8]">Your Finances</span>
+</h1>
+
+
+  <p class="mt-4 text-lg text-white max-w-2xl">
+   Whether you prefer to use phone, tablet or computer, we provide the tools to manage your finances when you want. We have many ways for you to bank with us.
+  </p>
+ <div class="flex gap-4 pt-4">
+    
+      <a
+  href="#"
+  class="inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-orange-500 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-base font-semibold transition"
+>
+  <svg xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="w-5 h-5"
+  >
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+    />
+  </svg>
+  Get Started
+</a>
+      </a>
+
+     <a
+  href="#"
+  class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-base font-semibold transition"
+>
+  <svg xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="w-5 h-5"
+  >
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+    />
+  </svg>
+  Login
+</a>
+    </div>
+</section>
+
+    
+
+  <!-- Tracking Result -->
+  <div id="trackingResult" class="mt-6 flex justify-start text-left"></div>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div aria-hidden="true" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+      <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
+    </div>
+  </div>
+ <div class="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-center lg:gap-12 px-4 py-12 bg-gray-100">
+  <!-- Card 1: Rating (wider, white background) -->
+  <div class="w-full max-w-md lg:max-w-lg p-8 bg-white rounded-[20px] shadow-md hover:opacity-90 cursor-pointer mx-auto text-center">
+    <a href="#" class="block">
+      <!-- Rating stars image -->
+      <img src="./rating.png" alt="rating" class="w-32 h-20 mb-6 mx-auto">
+
+      <!-- Description text -->
+      <p class="text-sm md:text-base text-gray-600 mb-6">
+        Doing more for you — Whether online or in the Unity Trust Bank app — to keep you in control no matter what
+      </p>
+
+      <!-- Logo + name side by side -->
+      <div class="flex items-center justify-center gap-4">
+        <img src="./logoo.jpeg" alt="logo" class="w-12 h-12 rounded-full object-cover">
+        <h4 class="font-bold text-lg">Unity Trust Bank</h4>
+      </div>
+    </a>
+  </div>
+
+  <!-- Group the other 3 cards (same width, gray background) -->
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full lg:w-auto lg:gap-8">
+    <!-- Card 2: Email -->
+    <div class="p-6 bg-[#F4F4F4] rounded-[20px] hover:opacity-90 cursor-pointer flex items-center gap-4">
+      <a href="mailto:support@golddewfn.com" class="flex items-center gap-4 w-full">
+        <img src="./email.png" alt="email" class="w-12 h-12 flex-shrink-0">
+        <div>
+          <h4 class="font-semibold text-lg">support@gmail.com</h4>
+          <p class="text-sm text-gray-600">Support 24/7</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card 3: Free Consultation -->
+    <div class="p-6 bg-[#F4F4F4] rounded-[20px] hover:opacity-90 cursor-pointer flex items-center gap-4">
+      <a href="tel:+1234567890" class="flex items-center gap-4 w-full"> <!-- or mailto if needed -->
+        <img src="./customer-service-agent.png" alt="consultation" class="w-12 h-12 flex-shrink-0">
+        <h4 class="font-semibold text-lg">Free Consultation</h4>
+      </a>
+    </div>
+
+    <!-- Card 4: Location -->
+    <div class="p-6 bg-[#F4F4F4] rounded-[20px] hover:opacity-90 cursor-pointer flex items-center gap-4">
+      <a href="https://maps.google.com/?q=Vermont+USA" target="_blank" class="flex items-center gap-4 w-full">
+        <img src="./placeholder.png" alt="location" class="w-12 h-12 flex-shrink-0">
+        <h4 class="font-semibold text-lg">Vermont USA</h4>
+      </a>
+    </div>
+  </div>
+</div>
+<section class="mt-10 text-center mb-8">
+  <!-- Heading -->
+   <div class="bg-[#f1f1f1]">
+     <h2 class="pt-[30px] text-3xl font mb-10 text-[#0A1F44]">Our Valuable Features</h2>
+<p>Experience Easy Banking online with award-winnig Unity Trust Bank</p>
+   <section class="max-w-6xl mx-auto p-6">
+
+  <!-- Cards Wrapper -->
+  <div id="slider" class="relative">
+
+    <!-- Cards -->
+    <div class="flex lg:grid lg:grid-cols-4 gap-6 overflow-hidden">
+
+      <!-- CARD -->
+      <div class="card w-full flex-shrink-0 bg-white rounded-lg shadow p-8 text-center">
+        <img src="./unlock.png" class="w-20 h-20 mx-auto mb-4">
+        <h4 class="font-semibold text-xl mb-3">High Yield Savings (HYS)</h4>
+        <p class="text-gray-600 mb-6">
+          Earn interest and access cash via ATM, online, and more.
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-2 rounded-md">
+          Read More +
+        </button>
+      </div>
+
+      <div class="card w-full flex-shrink-0 bg-white rounded-lg shadow p-8 text-center">
+        <img src="./money.png" class="w-20 h-20 mx-auto mb-4">
+        <h4 class="font-semibold text-xl mb-3">Certificate of Deposit</h4>
+        <p class="text-gray-600 mb-6">
+          $2,000 minimum opening deposit lock in your rate today and make your money work for you.
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-2 rounded-md">
+          Read More +
+        </button>
+      </div>
+
+      <div class="card w-full flex-shrink-0 bg-white rounded-lg shadow p-8 text-center">
+        <img src="./megaphone.png" class="w-20 h-20 mx-auto mb-4">
+        <h4 class="font-semibold text-xl mb-3">Instant Transactions</h4>
+        <p class="text-gray-600 mb-6 pr-[10px] ">
+          Check balances, transfer funds or deposit checks from almost everywhere, 24/7. That's the banking sync with you.
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-2 rounded-md">
+          Read More +
+        </button>
+      </div>
+
+      <div class="card w-full flex-shrink-0 bg-white rounded-lg shadow p-8 text-center">
+        <img src="./placeholder.png" class="w-20 h-20 mx-auto mb-4">
+        <h4 class="font-semibold text-xl mb-3">Safe and Secure</h4>
+        <p class="text-gray-600 mb-6">
+          Bank with confidence. save and spend with peace of mind, knowing Unity Trust Bank are FDIC and asecured.
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-2 rounded-md">
+          Read More +
+        </button>
+      </div>
+
+    </div>
+
+    <!-- NAVIGATION ARROWS (Mobile Only) -->
+    <div class="flex justify-center items-center gap-8 mt-8 lg:hidden">
+      <button id="prev">
+        <svg width="36" height="36" fill="none" stroke="#2563eb" stroke-width="2">
+          <circle cx="18" cy="18" r="17"/>
+          <path d="M21 12l-6 6 6 6"/>
+        </svg>
+      </button>
+
+      <button id="next">
+        <svg width="36" height="36" fill="none" stroke="#2563eb" stroke-width="2">
+          <circle cx="18" cy="18" r="17"/>
+          <path d="M15 12l6 6-6 6"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+   </div>
+ 
+ 
+
+</section>
+
+
+<div class="bg-[#f7f8fc] pl-[20px]">
+  <div class="block lg:flex lg:gap-10">
+    <div class="">
+      <img src="./WhatsApp Image 2026-01-01 at 06.17.12.jpeg" alt="bb" class="w-30 h-30 ">
+    </div>
+    <div class="">
+
+   
+ <h5 class="text-2xl pt-[20px] lg:pt-[70px]">
+  A Fully Integraated Suite For Large Enterprise
+ </h5> 
+ <p class="pt-[20px] pb-[10px]"> Doing more for you - Whether online or in Unity Trust Bank- to keep you in control no matter what</p>
+ <div class="space-y-5">
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>International Payments</span>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Request Features</span>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Premium Support</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Direct Debit</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Automated Accounting</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Financial Development</span>
+  </div>
+   </div>
+</div>
+
+
+</div>
+<div class="block lg:flex lg:gap-10" >
+  <div class="">
+      <img src="./boo.jpeg" alt="bb" class="w-30 h-30 ">
+    </div>
+    <div class="">
+
+   
+ <h5 class="text-2xl pt-[20px] lg:pt-[70px]">
+  Small To Medium-Sized Business 
+ </h5> 
+ <p class="pt-[20px] pb-[10px]"> We're Unity Trust Bank - a fortune 500 company tbat's been helping customers reach for what's important for more than 80 years.</p>
+ <div class="space-y-5">
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Deposit Checks Instantly</span>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>A Powerful Open API</span>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Affilates And Partnerships</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Coverage Around The World</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Business Without Borders</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Financial Development</span>
+  </div>
+   </div>
+ 
+</div>
+</div>
+
+<div class="block lg:flex lg:gap-10 pb-[50px] lg:pr-[20px]">
+    <div class="">
+      <img src="./nee.jpeg" alt="bb" class="w-30 h-30 ">
+    </div>
+    <div class="">
+
+   
+ <h5 class="text-2xl pt-[20px] lg:pt-[70px]">
+  Enterpreneurs, And Sole Traders & Freelancers
+ </h5> 
+ <p class="pt-[20px] pb-[10px]"> We're also the leading provider of private-label credit cards in the USA, so we might already be in your wallet supporting one of your favorite retailers</p>
+ <div class="space-y-5">
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>International Payments</span>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Request Features</span>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Premium Support</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Direct Debit</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Automated Accounting</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <img src="./check.png" class="w-5 h-5" />
+    <span>Financial Development</span>
+  </div>
+   </div>
+</div>
+
+</div>
+
+</div>
+<section class="w-full  flex flex-col bg-cover bg-center py-20 pt-[100px] " id="stats"
+style="background-image: url(./white\ bb.jpeg);"
+>
+
+  <h2 class="text-3xl md:text-4xl font-semibold mb-12 text-center">
+    We Always Try To Evaluate Customers Values
+  </h2>
+
+  <div class="lg:flex lg:justify-between grid grid-cols-2 gap-10 max-w-3xl mx-auto">
+
+    <!-- Contributors -->
+    <div>
+      <div
+        class="counter text-4xl font-bold text-blue-600"
+        data-start="0"
+        data-end="100"
+        data-suffix="+"
+      >0</div>
+      <p class="mt-2">Contributors</p>
+    </div>
+
+    <!-- Positive Feedback -->
+    <div>
+      <div
+        class="counter text-4xl font-bold text-blue-600"
+        data-start="0"
+        data-end="20"
+        data-suffix="k"
+      >0</div>
+      <p class="mt-2">Positive Feedback</p>
+    </div>
+
+    <!-- Customer Trust Rate -->
+    <div>
+      <div
+        class="counter text-4xl font-bold text-blue-600"
+        data-start="0"
+        data-end="100"
+        data-suffix="%"
+      >0</div>
+      <p class="mt-2">Customers Trust Rate</p>
+    </div>
+
+    <!-- Active Workers -->
+    <div>
+      <div
+        class="counter text-4xl font-bold text-blue-600"
+        data-start="0"
+        data-end="30"
+        data-suffix="+"
+      >0</div>
+      <p class="mt-2">Active Workers</p>
+    </div>
+
+  </div>
+</section>
+<section class="lg:flex block  bg-[#f5f0ff] mt-[20px]">
+  <div class="pb-[20px] flex flex-col items-center justify-center  pt-[20px] pb-[30]">
+    <h3 class="text-2xl">Entirely Providing Best Services</h3>
+    <p class=" text-center text-gray-700 max-w-2xl mb-12 pt-[20px] pb-[20px]">We're proud to say we've built a culture that stands for strong values and a shared vision and a mission. it's a core part of our DNA, and a bold declearation of our commitment to do the right thing: for our partners, for our customers and for our team members</p>
+   
+<a href="">
+
+    <button class="mx-auto  rounded-lg bg-blue-600 px-8 py-4 text-white font-medium flex items-center gap-2">
+     <svg xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="w-5 h-5"
+  >
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+    />
+  </svg>
+      Get Started
+    </button>
+    </a>
+  </div>
+  <div class="h-full bg-gray-50 flex items-center justify-center p-4">
+  <div class="w-full max-w-md bg-white rounded-2xl shadow-lg overflow-hidden">
+    <!-- Illustration Section -->
+    <div class="px-8 pt-10 pb-8 bg-white">
+      <div class="flex justify-center items-center">
+        <img 
+        src="./target.png" 
+        alt="Team collaboration illustration"
+        class="w-16 h-16"
+      />
+      </div>
+      
+    </div>
+
+    <!-- Content Section -->
+    <div class="px-10 pb-12 text-center">
+      <h2 class="text-xl font-bold text-indigo-900 mb-6">
+        Our Mission
+      </h2>
+      
+      <p class="text-md text-gray-600 leading-relaxed mb-10">
+        Creating financial and technology solutions to move 
+        our customers and partners toward their goals, 
+        on their terms.
+      </p>
+      
+      <a href="#" class="text-l font-medium text-blue-600 hover:text-blue-700 transition-colors">
+        Read More +
+      </a>
+    </div>
+  </div>
+</div>
+<div class="h-full bg-gray-50 flex items-center justify-center p-4">
+  <div class="w-full max-w-md bg-white rounded-2xl shadow-lg overflow-hidden">
+    <!-- Illustration Section -->
+    <div class="px-8 pt-10 pb-8 bg-white">
+      <div class="flex justify-center items-center">
+        <img 
+        src="./ethics.png" 
+        alt="Team collaboration illustration"
+        class="w-16 h-16"
+      />
+      </div>
+      
+    </div>
+
+    <!-- Content Section -->
+    <div class="px-10 pb-12 text-center">
+      <h2 class="text-xl font-bold text-indigo-900 mb-6">
+        Our Values
+      </h2>
+      
+      <p class="text-md text-gray-600 leading-relaxed mb-10">
+       Our values mark our past, inform our actions every day and inspire our future
+      </p>
+      
+      <a href="#" class="text-l font-medium text-blue-600 hover:text-blue-700 transition-colors">
+        Read More +
+      </a>
+    </div>
+  </div>
+</div>
+<div class="h-full bg-gray-50 flex items-center justify-center p-4">
+  <div class="w-full max-w-md bg-white rounded-2xl shadow-lg overflow-hidden">
+    <!-- Illustration Section -->
+    <div class="px-8 pt-10 pb-8 bg-white">
+      <div class="flex justify-center items-center">
+        <img 
+        src="./anywhere.png" 
+        alt="Team collaboration illustration"
+        class="w-16 h-16"
+      />
+      </div>
+      
+    </div>
+
+    <!-- Content Section -->
+    <div class="px-10 pb-12 text-center">
+      <h2 class="text-xl font-bold text-indigo-900 mb-6">
+        Bank Anywhere, Anytime
+      </h2>
+      
+      <p class="text-md text-gray-600 leading-relaxed mb-10">
+        Doing more for you- whether online  or in Unity Trust Bank Savings-to keep you in control no matter what .
+      </p>
+      
+      <a href="#" class="text-l font-medium text-blue-600 hover:text-blue-700 transition-colors">
+        Read More +
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+<section class="block lg:flex mb-10 pl-[20px] pr-[20ox] lg:gap-[50px] ">
+  <div class="flex-col text-center ">
+    <h4 class="font-medium text-2xl mt-[40px] pb-[15px] ">
+      Payment Gateway is Easy To Fill With Our System
+    </h4>
+    <p>If you're taking another look at your finances, it may be time to rethink how you've been approaching your budgetting. Go back to basis with our short refresher and see whats best for your plan. </p>
+    <p class="pt=[8px]">We're proud to say we've built a culture that stands for strong values shared vision and mission. It's a core part of our DNA, and a bold declearation of our commitment to do the right thing: for our partners, for our customers, and for our team members </p>
+     <a
+  href="#"
+  class="inline-flex items-center gap-2 bg-blue-700 mt-[20px] mb-[20ox] hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-base font-semibold transition"
+>
+  <svg xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="w-5 h-5"
+  >
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+    />
+  </svg>
+  Get Started
+</a>
+  </div>
+  <div class="">
+    <img src="./ipad.jpeg" alt="ipad" class="w-full h-full">
+  </div>
+</section>
+<section class="bg-[#f1f1f1] min-h-screen flex items-center justify-center px-4">
+  <div
+    class="w-full max-w-6xl rounded-2xl bg-cover bg-center bg-no-repeat py-16 px-6 lg:px-16 text-center"
+    style="background-image: url('./blue bb.jpeg');"
+  >
+    <!-- Heading -->
+    <h2 class="text-white text-3xl lg:text-4xl font- leading-snug">
+      What Is Going Through  
+      <br class="hidden lg:block" />
+      Your Mind?
+    </h2>
+
+    <!-- Subheading -->
+    <p class="text-white/90 mt-4 text-lg lg:text-xl max-w-2xl mx-auto">
+      Don’t worry! Get connected with us.
+      We’re here to answer your questions about  
+      <span class="font-semibold">Unity Trust Bank</span>.
+    </p>
+
+    <!-- Buttons -->
+    <div class="mt-10 flex gap-4 justify-center items-center flex-wrap">
+  <!-- Contact Us -->
+  <a
+    href="#contact"
+    class="flex items-center gap-2 bg-gradient-to-r from-red-500 to-orange-500 hover:bg-red-700 text-white px-6 py-3 rounded-xl font-semibold transition text-sm sm:text-base"
+  >
+    <i class="fa-solid fa-address-book"></i>
+    Contact Us
+  </a>
+
+  <!-- Register -->
+  <a
+    href="#register"
+    class="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold transition text-sm sm:text-base"
+  >
+    <i class="fa-solid fa-clipboard-list"></i>
+    Register
+  </a>
+</div>
+  </div>
+  
+</section>
+<section class="bg-[#f7f8fc] py-16 px-4">
+  <div class="max-w-7xl mx-auto border border-gray-200">
+    <div class="flex flex-wrap">
+
+      <!-- Item -->
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./comment.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Circle</p>
+        <span class="text-xs text-gray-500">Empowerment</span>
+      </div>
+
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./virtual-assistant.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Assistant</p>
+        <span class="text-xs text-gray-500">Supportive</span>
+      </div>
+
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./project-manager.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Management</p>
+        <span class="text-xs text-gray-500">Business</span>
+      </div>
+
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./business-people.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Shadow</p>
+        <span class="text-xs text-gray-500">Helpful</span>
+      </div>
+
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./save-money.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Noshow</p>
+        <span class="text-xs text-gray-500">Patronize</span>
+      </div>
+
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./planning.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Intrego</p>
+        <span class="text-xs text-gray-500">Management</span>
+      </div>
+
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./letter-h.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Henteo</p>
+        <span class="text-xs text-gray-500">Brand</span>
+      </div>
+
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./triangle.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Enreo</p>
+        <span class="text-xs text-gray-500">Creative</span>
+      </div>
+
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./marker.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Geono</p>
+        <span class="text-xs text-gray-500">Digital</span>
+      </div>
+
+      <div class="w-1/3 lg:w-1/4 h-[160px] border border-gray-200 flex flex-col items-center justify-center gap-2 text-center">
+        <img src="./situation.png" alt="Logo" class="h-10 object-contain" />
+        <p class="text-sm font-semibold text-gray-800">Circ</p>
+        <span class="text-xs text-gray-500">Technology</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="py-16 bg-[#f8f9fa]">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl  text-[#0A1F44] mb-4">
+      What Our Customers Say
+    </h2>
+    <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+      Real experiences from real people. Discover why thousands trust Unity Trust Bank for their everyday banking needs.
+    </p>
+
+    <!-- Testimonials Grid (Desktop: 4 columns, Mobile: 1 column) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-[20px] shadow-md p-8 hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="https://media.gettyimages.com/id/1352888268/photo/close-up-portrait-of-japanese-mature-businessman-in-the-office.jpg?s=612x612&w=gi&k=20&c=fttJcnKesy39c7GWv0gI5Fr-QbYWHw14IVtsdKaOFUI=" 
+          alt="Michael Chen" 
+          class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 rounded-[50px] object-cover border-4 border-gray-100"
+        >
+        <div class="flex justify-center mb-4 text-yellow-400 text-lg">
+          ★★★★★
+        </div>
+        <h4 class="font-semibold text-xl mb-3 text-[#0A1F44]">Michael Chen</h4>
+        <p class="text-gray-700 text-base leading-relaxed">
+          "The 24/7 support at Unity Trust Bank is outstanding. I had an urgent issue late at night and got immediate help through the app chat. Everything was resolved quickly and professionally. It's reassuring to know real people are always there when you need them."
+        </p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-[20px] shadow-md p-8 hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="https://media.istockphoto.com/id/1279125903/photo/head-and-shoulders-portrait-of-smiling-mature-businesswoman-working-in-modern-office.jpg?s=612x612&w=0&k=20&c=cjnbjqZqr0W_i-IHWnkgS67oSLeFjv6lo_LEwgfSsqw=" 
+          alt="Sarah Johnson" 
+          class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 rounded-[50px] object-cover border-4 border-gray-100"
+        >
+        <div class="flex justify-center mb-4 text-yellow-400 text-lg">
+          ★★★★★
+        </div>
+        <h4 class="font-semibold text-xl mb-3 text-[#0A1F44]">Sarah Johnson</h4>
+        <p class="text-gray-700 text-base leading-relaxed">
+          "I've been with Unity Trust Bank for over five years now. Their high-yield savings accounts have helped me grow my money steadily, and the mobile app makes managing finances so simple. It's modern banking that actually works for busy people like me."
+        </p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-[20px] shadow-md p-8 hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="https://media.gettyimages.com/id/1188966374/photo/portrait-of-a-happy-mexican-businesswoman.jpg?s=612x612&w=gi&k=20&c=A4-YoVJwEJBAIaAtrE7UK03B97Gs_gedBAWHhr5-73c=" 
+          alt="Emma Rodriguez" 
+          class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 rounded-[50px] object-cover border-4 border-gray-100"
+        >
+        <div class="flex justify-center mb-4 text-yellow-400 text-lg">
+          ★★★★★
+        </div>
+        <h4 class="font-semibold text-xl mb-3 text-[#0A1F44]">Emma Rodriguez</h4>
+        <p class="text-gray-700 text-base leading-relaxed">
+          "The free consultation service was a game-changer for my retirement planning. The advisor was patient, knowledgeable, and helped me set up a plan tailored to my needs — all at no extra cost. Unity Trust Bank truly puts customers first."
+        </p>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="bg-white rounded-[20px] shadow-md p-8 hover:shadow-xl transition-shadow duration-300">
+        <img 
+          src="https://thumbs.dreamstime.com/b/smiling-ethnic-man-african-american-businessman-business-agent-laptop-corporate-office-adult-male-executive-professional-420452135.jpg 
+          alt="David Okonkwo" 
+          class="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 rounded-[50px] object-cover border-4 border-gray-100"
+        >
+        <div class="flex justify-center mb-4 text-yellow-400 text-lg">
+          ★★★★★
+        </div>
+        <h4 class="font-semibold text-xl mb-3 text-[#0A1F44]">David Okonkwo</h4>
+        <p class="text-gray-700 text-base leading-relaxed">
+          "Traveling frequently for work, I need a bank I can rely on anywhere. Unity Trust Bank's app offers secure global access, instant notifications, and seamless international transfers. It's the most reliable mobile banking experience I've had."
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Simple Toggle Button (Optional: Show/Hide Section) -->
+    <div class="mt-12">
+      <button id="toggle-testimonials" class="bg-[#0A1F44] text-white px-8 py-3 rounded-full font-medium hover:bg-[#08163a] transition">
+        Show More Testimonials
+      </button>
+    </div>
+  </div>
+</section>
+<footer class="bg-[#0A1F44] text-white py-12">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <!-- Logo & Description -->
+    <div>
+      <!-- 🧭 PLACE YOUR LOGO BELOW -->
+      <img src="./logoo.jpeg" alt="Company Logo" class="w-32 mb-4 rounded " />
+      <!-- 🧭 REPLACE '/your-logo.png' WITH YOUR LOGO IMAGE PATH -->
+      
+      <p class="text-gray-300 text-sm">
+        Save and spend with peace of mind, knowing your Unity Trust Bank savings account are fully secured.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Support</h4>
+      <ul class="space-y-2 text-gray-300 text-sm">
+        <li><a href="./index.html" class="hover:text-[#B1442E]">Home</a></li>
+        <li><a href="#services" class="hover:text-[#B1442E]">FAQ's</a></li>
+        <li><a href="#track" class="hover:text-[#B1442E]">Privacy Policy</a></li>
+        <li><a href="#contact" class="hover:text-[#B1442E]">Contact Us</a></li>
+      </ul>
+    </div>
+    <div >
+      
+    </div>
+
+    <!-- Legal -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Legal</h4>
+      <ul class="space-y-2 text-gray-300 text-sm">
+        <li><a href="#" class="hover:text-[#B1442E]">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-[#B1442E]">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-[#B1442E]" aria-label="Facebook"><i class="fab fa-facebook"></i>
+</a>
+        <a href="#" class="hover:text-[#B1442E]" aria-label="Twitter"><i class="fab fa-twitter"></i>
+</a>
+        <a href="#" class="hover:text-[#B1442E]" aria-label="Instagram"><i class="fab fa-instagram"></i>
+</a>
+        <a href="#" class="hover:text-[#B1442E]" aria-label="LinkedIn"><i class="fab fa-linkedin"></i>
+</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
+    © 2025 Arrow Line Logistics. All Rights Reserved.
+  </div>
+</footer>
+
+<script src="./index.js"></script>
+</body>
+</html>
