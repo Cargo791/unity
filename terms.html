@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms & Conditions | Unity Trust Bank</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[Montserrat] bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a href="./index.html" class="flex items-center gap-3">
+      <img src="./logoo.jpeg" class="h-8 w-8 rounded-full" alt="logo">
+      <span class="font-bold text-lg">Unity Trust Bank</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex gap-8 text-sm font-semibold">
+      <a href="./index.html" class="hover:text-blue-600">Home</a>
+      <a href="./contact.html" class="hover:text-blue-600">Contact</a>
+      <a href="./service.html" class="hover:text-blue-600">FAQ’s</a>
+      <a href="./terms.html" class="text-blue-600">Terms</a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+    <div class="flex flex-col px-6 py-4 gap-4 text-sm font-semibold">
+      <a href="./index.html">Home</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./service.html">FAQ’s</a>
+      <a href="./terms.html" class="text-blue-600">Terms</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 bg-gradient-to-r from-blue-800 to-indigo-700 text-white text-center px-6">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">
+    Terms & Conditions
+  </h1>
+  <p class="max-w-3xl mx-auto text-white/90">
+    Please read these Terms and Conditions carefully before using the Unity Trust Bank website.
+  </p>
+</section>
+
+<!-- CONTENT -->
+<section class="max-w-5xl mx-auto px-6 py-20 space-y-8">
+
+  <div class="bg-white rounded-xl shadow-md p-8 space-y-6">
+
+    <div>
+      <h2 class="text-2xl font-bold mb-2">1. General Information</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Unity Trust Bank is a digital banking platform provided for informational,
+        educational, and demonstration purposes only. Use of this website
+        constitutes acceptance of these Terms and Conditions.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-2">2. Eligibility</h2>
+      <p class="text-gray-600 leading-relaxed">
+        By using this website, you confirm that you are at least 18 years of age
+        and capable of entering into a legally binding agreement.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-2">3. Use of the Website</h2>
+      <p class="text-gray-600 leading-relaxed">
+        You agree to use this website only for lawful purposes. Any attempt to
+        misuse, hack, or interfere with the platform is strictly prohibited.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-2">4. No Financial Advice</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Information provided on this website does not constitute financial,
+        legal, or investment advice. Users should seek professional advice
+        before making financial decisions.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-2">5. Account Responsibility</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Users are responsible for maintaining the confidentiality of their
+        login credentials and for all activities that occur under their account.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-2">6. Security</h2>
+      <p class="text-gray-600 leading-relaxed">
+        While reasonable security measures are implemented, Unity Trust Bank
+        does not guarantee uninterrupted or error-free operation of the website.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-2">7. Limitation of Liability</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Unity Trust Bank shall not be liable for any direct, indirect, incidental,
+        or consequential damages arising from the use or inability to use this website.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-2">8. Modifications</h2>
+      <p class="text-gray-600 leading-relaxed">
+        These Terms may be updated at any time without prior notice.
+        Continued use of the website indicates acceptance of the revised Terms.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-2">9. Contact Information</h2>
+      <p class="text-gray-600 leading-relaxed">
+        For questions regarding these Terms, please contact us through the
+        Contact Us page.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0A1F44] text-white py-8 text-center">
+  <p class="text-sm text-gray-300">
+    © 2025 Unity Trust Bank. All rights reserved.
+  </p>
+</footer>
+
+<!-- TOGGLE SCRIPT -->
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
